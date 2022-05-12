@@ -21,3 +21,5 @@ I changed this:
 To this (note the mw8 changed to mw9):
 
                   <article class="flex-l flex-wrap justify-between mw9 center ph3">
+
+As the theme was a git sub-module, I had to disconnect it from the original github repo to make this change, I used the following as a guide: https://stackoverflow.com/questions/1759587/how-to-un-submodule-a-git-submodule
