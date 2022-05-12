@@ -1,6 +1,6 @@
 baseURL = 'https://mrpaulstone.github.io'
 languageCode = 'en-us'
-title = 'Blog / Portfolio'
+title = 'Paul Stone . Blog / Portfolio'
 theme = "ananke"
 publishDir = "docs"
 
