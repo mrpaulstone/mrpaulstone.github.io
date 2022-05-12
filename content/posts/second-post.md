@@ -14,7 +14,7 @@ This post explains the various parts.
 Gitlab Pipelines
 To setup a pipeline in Gitlab, you use a file called .gitlab-ci.yml.
 
-The file contents:
+The Gitlab pipeline file contents explained:
 
         default:
         image:
@@ -29,6 +29,16 @@ The file contents:
             key: terraform
             paths:
             - .terraform
+
+'default' sets up the standard used parts across the rest of the instructions
+'entrypoint' provides some basic commands to run automatically after the image starts
+
+'before_script' runs before each script section
+
+'cache:paths' choose which files or directorys to cache
+'cache:key' gives each cache a key, so the cache can be re-used. Basically the way the cache is setup here, the terraform init command is run once and the output of that is used for future steps.
+
+
 
 
         stages:
@@ -78,16 +88,6 @@ The file contents:
         only:
             refs:
             - develop
-
-Here are the main sections of the yml file explained:
-
-'default' sets up the standard used parts across the rest of the instructions
-'entrypoint' provides some basic commands to run automatically after the image starts
-
-'before_script' runs before each script section
-
-'cache:paths' choose which files or directorys to cache
-'cache:key' gives each cache a key, so the cache can be re-used. Basically the way the cache is setup here, the terraform init command is run once and the output of that is used for future steps.
 
 
 
