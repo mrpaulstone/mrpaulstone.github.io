@@ -10,6 +10,14 @@ This site is built using a framework called Hugo, which is a static site generat
 
 Its pretty cool to see github actions runners do the work automatically. 
 
-TLDR; this portfolio/blog site is powered by a free pipeline, thanks Github!
-
 For more info have a look here: https://gohugo.io/hosting-and-deployment/hosting-on-github/
+
+Update: I made a few small tweaks to the code to enable the layout to display code blocks a little better, as the code blocks were getting cut off. In order to do this I had to change the file under themes/layouts/_default/single.html
+
+I changed this:
+
+                  <article class="flex-l flex-wrap justify-between mw8 center ph3">
+
+To this (note the mw8 changed to mw9):
+
+                  <article class="flex-l flex-wrap justify-between mw9 center ph3">
