@@ -6,6 +6,8 @@ draft: false
 
 This site is built using a framework called Hugo, which is a static site generator. I now have it setup using github actions to automatically re-build the static pages whenever I push code to my Github repo.
 
+<!--more-->
+
 Its pretty cool to see github actions runners do the work automatically. 
 
 TLDR; this portfolio/blog site is powered by a free pipeline, thanks Github!
