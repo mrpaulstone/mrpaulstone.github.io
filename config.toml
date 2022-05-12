@@ -1,7 +1,8 @@
-baseURL = 'https://mrpaulstone.github.io/'
+baseURL = 'https://mrpaulstone.github.io'
 languageCode = 'en-us'
 title = 'Blog / Portfolio'
 theme = "ananke"
+publishDir = "docs"
 
 [[params.ananke_socials]]
 name = "linkedin"
